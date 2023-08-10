@@ -19,7 +19,7 @@ services:
     factory: ['@driver_manager', 'createConnection']
     arguments: ['dummy://']
 
-  App\Infrastructure\Repository\CustomerRepository:
+  App\Repository\CustomerRepository:
     factory: [null, 'create']
     arguments: ['@connection']
 

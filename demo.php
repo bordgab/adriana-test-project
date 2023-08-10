@@ -4,7 +4,7 @@
 require __DIR__.'/vendor/autoload.php';
 
 use App\CustomerApi;
-use App\Infrastructure\Model\Customer;
+use App\Model\Customer;
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;

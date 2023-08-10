@@ -5,8 +5,8 @@ declare(strict_types=1);
 namespace App;
 
 use App\Exception\ApiException;
-use App\Infrastructure\Model\Customer;
-use App\Infrastructure\Repository\CustomerRepository;
+use App\Model\Customer;
+use App\Repository\CustomerRepository;
 use Doctrine\Common\Collections\ArrayCollection;
 
 class CustomerApi

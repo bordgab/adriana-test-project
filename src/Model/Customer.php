@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\Infrastructure\Model;
+namespace App\Model;
 
 class Customer
 {

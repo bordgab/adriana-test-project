@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace App\Infrastructure\Repository;
+namespace App\Repository;
 
 use App\Infrastructure\Dbal\AbstractRepository;
 use App\Infrastructure\Dbal\Exception\DriverException;
 use App\Infrastructure\Dbal\Exception\QueryException;
-use App\Infrastructure\Model\Customer;
+use App\Model\Customer;
 use Doctrine\Common\Collections\ArrayCollection;
 
 class CustomerRepository extends AbstractRepository
