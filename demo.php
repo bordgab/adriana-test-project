@@ -33,13 +33,6 @@ use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
                 new Customer('Csillag Virág', 'Szeged', new \DateTime(), '7777-77'),
         ]);
 
-        // store new customers
-        $api->storeCustomer(new Customer('Gipsz Jakab', 'Miskolc', new \DateTime()));
-        $api->storeCustomer([
-            new Customer('Teszt Elek', 'Pécs', new \DateTime(), '1234-12'),
-            new Customer('Csillag Virág', 'Szeged', new \DateTime(), '7777-77'),
-        ]);
-
         return 0;
     })
     ->run()
