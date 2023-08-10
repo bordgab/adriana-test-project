@@ -1,0 +1,27 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+
+  driver_manager:
+    class: 'App\Infrastructure\Dbal\DummyDriverManager'
+
+  App\Infrastructure\Dbal\DriverManager:
+    alias: 'driver_manager'
+
+  database:
+    class: 'App\Infrastructure\Dbal\Database'
+    arguments:
+      - { max_connection: 2 }
+
+  connection:
+    class: App\Infrastructure\Dbal\DummyConnection
+    factory: ['@driver_manager', 'createConnection']
+    arguments: ['dummy://']
+
+  App\Infrastructure\Repository\CustomerRepository:
+    factory: [null, 'create']
+    arguments: ['@connection']
+
+  App\CustomerApi:
+    public: true
