@@ -1,0 +1,23 @@
+{
+  "name": "bordgab/adriana-test-project",
+  "description": "Adriana Customer API sample project",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Bordács Gábor",
+      "email": "bordgab@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": { "App\\": "src/" }
+  },
+  "require": {
+    "php": ">=8.1",
+    "symfony/console": "^6.0",
+    "symfony/yaml": "^6.3",
+    "symfony/dependency-injection": "^6.3",
+    "doctrine/collections": "^2.1",
+    "symfony/options-resolver": "^6.3"
+  }
+}
